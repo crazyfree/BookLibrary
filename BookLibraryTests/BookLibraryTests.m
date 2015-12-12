@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface iOS_Design_PatternsTests : XCTestCase
+@interface BookLibraryTests : XCTestCase
 
 @end
 
-@implementation iOS_Design_PatternsTests
+@implementation BookLibraryTests
 
 - (void)setUp {
     [super setUp];

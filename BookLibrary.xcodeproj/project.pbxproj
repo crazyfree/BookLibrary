@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		477A70151C1C743100413758 /* BookLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 477A70141C1C743100413758 /* BookLibraryTests.m */; };
+		477A70171C1C745100413758 /* BookLibraryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 477A70161C1C745100413758 /* BookLibraryUITests.m */; };
+		477A70191C1C756200413758 /* APITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 477A70181C1C756200413758 /* APITests.m */; };
+		477A701B1C1C757400413758 /* BookModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 477A701A1C1C757400413758 /* BookModelTests.m */; };
 		478AC5151C1BDED2007D1270 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 478AC5141C1BDED2007D1270 /* main.m */; };
 		478AC5181C1BDED2007D1270 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 478AC5171C1BDED2007D1270 /* AppDelegate.m */; };
 		478AC51B1C1BDED2007D1270 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 478AC51A1C1BDED2007D1270 /* ViewController.m */; };
 		478AC51E1C1BDED2007D1270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 478AC51C1C1BDED2007D1270 /* Main.storyboard */; };
 		478AC5201C1BDED2007D1270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 478AC51F1C1BDED2007D1270 /* Assets.xcassets */; };
 		478AC5231C1BDED2007D1270 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 478AC5211C1BDED2007D1270 /* LaunchScreen.storyboard */; };
-		478AC52E1C1BDED2007D1270 /* iOS_Design_PatternsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 478AC52D1C1BDED2007D1270 /* iOS_Design_PatternsTests.m */; };
-		478AC5391C1BDED2007D1270 /* iOS_Design_PatternsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 478AC5381C1BDED2007D1270 /* iOS_Design_PatternsUITests.m */; };
 		478AC54F1C1BE40A007D1270 /* BookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 478AC54E1C1BE40A007D1270 /* BookView.m */; };
 		478AC5531C1BE509007D1270 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 478AC5521C1BE509007D1270 /* Book.m */; };
 		478AC5561C1BEAD4007D1270 /* LibraryAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 478AC5551C1BEAD4007D1270 /* LibraryAPI.m */; };
@@ -42,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		477A70141C1C743100413758 /* BookLibraryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookLibraryTests.m; sourceTree = "<group>"; };
+		477A70161C1C745100413758 /* BookLibraryUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookLibraryUITests.m; sourceTree = "<group>"; };
+		477A70181C1C756200413758 /* APITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APITests.m; sourceTree = "<group>"; };
+		477A701A1C1C757400413758 /* BookModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookModelTests.m; sourceTree = "<group>"; };
 		478AC5101C1BDED2007D1270 /* BookLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		478AC5141C1BDED2007D1270 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		478AC5161C1BDED2007D1270 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,10 +59,8 @@
 		478AC5221C1BDED2007D1270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		478AC5241C1BDED2007D1270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		478AC5291C1BDED2007D1270 /* BookLibrary.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookLibrary.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		478AC52D1C1BDED2007D1270 /* iOS_Design_PatternsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Design_PatternsTests.m; sourceTree = "<group>"; };
 		478AC52F1C1BDED2007D1270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		478AC5341C1BDED2007D1270 /* BookLibrary.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookLibrary.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		478AC5381C1BDED2007D1270 /* iOS_Design_PatternsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Design_PatternsUITests.m; sourceTree = "<group>"; };
 		478AC53A1C1BDED2007D1270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		478AC54D1C1BE40A007D1270 /* BookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookView.h; sourceTree = "<group>"; };
 		478AC54E1C1BE40A007D1270 /* BookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookView.m; sourceTree = "<group>"; };
@@ -148,8 +152,10 @@
 		478AC52C1C1BDED2007D1270 /* BookLibraryTests */ = {
 			isa = PBXGroup;
 			children = (
-				478AC52D1C1BDED2007D1270 /* iOS_Design_PatternsTests.m */,
+				477A70141C1C743100413758 /* BookLibraryTests.m */,
 				478AC52F1C1BDED2007D1270 /* Info.plist */,
+				477A70181C1C756200413758 /* APITests.m */,
+				477A701A1C1C757400413758 /* BookModelTests.m */,
 			);
 			path = BookLibraryTests;
 			sourceTree = "<group>";
@@ -157,7 +163,7 @@
 		478AC5371C1BDED2007D1270 /* BookLibraryUITests */ = {
 			isa = PBXGroup;
 			children = (
-				478AC5381C1BDED2007D1270 /* iOS_Design_PatternsUITests.m */,
+				477A70161C1C745100413758 /* BookLibraryUITests.m */,
 				478AC53A1C1BDED2007D1270 /* Info.plist */,
 			);
 			path = BookLibraryUITests;
@@ -354,7 +360,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				478AC52E1C1BDED2007D1270 /* iOS_Design_PatternsTests.m in Sources */,
+				477A701B1C1C757400413758 /* BookModelTests.m in Sources */,
+				477A70191C1C756200413758 /* APITests.m in Sources */,
+				477A70151C1C743100413758 /* BookLibraryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				478AC5391C1BDED2007D1270 /* iOS_Design_PatternsUITests.m in Sources */,
+				477A70171C1C745100413758 /* BookLibraryUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -474,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

@@ -14,3 +14,9 @@ Following is the design patterns that i've used for this exam:
 * Command: use for delete and undo deletion
 
 Note: In this project, HTTP client doesn't make with real server.
+
+#3 Device stability
+That project build on xcode 7.2 for iOS 7 and higher
+
+#3 License
+This project under MIT license, you can do what ever you want :P
