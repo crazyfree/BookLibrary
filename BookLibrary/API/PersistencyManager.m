@@ -20,6 +20,7 @@
     if (self) {
         // Try loading data from archivement
         NSData *data = [NSData dataWithContentsOfFile:[NSHomeDirectory() stringByAppendingString:@"/Documents/books.bin"]];
+        NSLog(@"%@", NSHomeDirectory());
         books = [NSKeyedUnarchiver unarchiveObjectWithData:data];
         if (books == nil) {
             books = [NSMutableArray arrayWithArray:

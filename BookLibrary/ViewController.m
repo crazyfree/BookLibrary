@@ -176,10 +176,10 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
     }
-    
     cell.textLabel.text = currentBookData[@"titles"][indexPath.row];
+//    [cell.textLabel setAccessibilityIdentifier:@"textLabel"];
     cell.detailTextLabel.text = currentBookData[@"values"][indexPath.row];
-    
+//    [cell.detailTextLabel setAccessibilityIdentifier:@"detailTextLabel"];
     return cell;
 }
 

@@ -7,8 +7,17 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "LibraryAPI.h"
+#import "PersistencyManager.h"
+#import "HTTPClient.h"
+#include <stdlib.h>
 
-@interface APITests : XCTestCase
+@interface APITests : XCTestCase {
+    LibraryAPI *api;
+    int bookCount;
+    NSArray *books;
+    Book *book;
+}
 
 @end
 
@@ -18,23 +27,47 @@
     [super setUp];
     
     // Put setup code here. This method is called before the invocation of each test method in the class.
-
-    // In UI tests it is usually best to stop immediately when a failure occurs.
-    self.continueAfterFailure = NO;
-    // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-    [[[XCUIApplication alloc] init] launch];
-
-    // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+    api = [LibraryAPI sharedInstance];
+//    NSError *error;
+//    NSString *filePath = [NSHomeDirectory() stringByAppendingString:@"/Documents/books.bin"];
+//    [[NSFileManager defaultManager] removeItemAtPath: filePath error:&error];
+//    if(error){
+//        NSLog(@"%@", [error localizedDescription]);
+//    }
+    books = [api getBooks];
+    book = [books objectAtIndex:0];
+    bookCount = books.count;
+    NSLog(@"book count: %lu", books.count);
 }
 
 - (void)tearDown {
+    api = nil;
+    
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample {
-    // Use recording to get started writing UI tests.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+- (void)testGetBookList{
+    // In there we have to test download book but in my case doesn't have real server so we just test getting data from local
+    XCTAssertEqual(books.count, 5);
+}
+
+- (void)testBookDeletes {
+    [api deleteBookAtIndex:0];
+    bookCount--;
+    XCTAssertEqual(books.count, bookCount);
+}
+
+- (void) testBookAdds {
+    [api addBook:book atIndex:0];
+    bookCount++;
+    XCTAssertEqual(books.count, bookCount);
+}
+
+- (void) testSaveBook {
+    NSString *filePath = [NSHomeDirectory() stringByAppendingString:@"/Documents/books.bin"];
+    XCTAssertTrue([[NSFileManager defaultManager] fileExistsAtPath:filePath]);
 }
 
 @end

@@ -1,4 +1,5 @@
-For this section, i created a book library that will display your books and their relevant information. 
+# Introduction
+For this demonistration, i created a book library that will display your books and their relevant information. 
 Following is the design patterns that i've used for this exam:
 * MVC: to manage whole project stucture
 * Singleton: used in LibraryAPI 
@@ -15,8 +16,11 @@ Following is the design patterns that i've used for this exam:
 
 Note: In this project, HTTP client doesn't make with real server.
 
-#3 Device stability
-That project build on xcode 7.2 for iOS 7 and higher
+### Device stability
+That project build on xcode 7.2 for all devices that use iOS 7 and higher
 
-#3 License
+### Testing
+Project just imports unit test for API and UI test (undone yet)
+
+### License
 This project under MIT license, you can do what ever you want :P

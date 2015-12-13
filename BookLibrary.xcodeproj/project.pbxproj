@@ -24,6 +24,8 @@
 		478AC55C1C1C0CC1007D1270 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 478AC55B1C1C0CC1007D1270 /* HTTPClient.m */; };
 		478AC5621C1C118B007D1270 /* Book+TableRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 478AC5611C1C118B007D1270 /* Book+TableRepresentation.m */; };
 		478AC5651C1C168C007D1270 /* HorizontalScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 478AC5641C1C168C007D1270 /* HorizontalScroller.m */; };
+		47E36FE51C1D3AA20078817D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 478AC52F1C1BDED2007D1270 /* Info.plist */; };
+		47E36FE61C1D3AA80078817D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 478AC53A1C1BDED2007D1270 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -326,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E36FE51C1D3AA20078817D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E36FE61C1D3AA80078817D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,9 +521,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "iOS-Design-PatternsTests/Info.plist";
+				INFOPLIST_FILE = BookLibraryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.crazyfree.iOS-Design-PatternsTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crazyfree.BookLibrary;
 				PRODUCT_NAME = BookLibrary;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookLibrary.app/BookLibrary";
 			};
@@ -529,9 +533,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "iOS-Design-PatternsTests/Info.plist";
+				INFOPLIST_FILE = BookLibraryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.crazyfree.iOS-Design-PatternsTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crazyfree.BookLibrary;
 				PRODUCT_NAME = BookLibrary;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookLibrary.app/BookLibrary";
 			};
@@ -540,11 +544,11 @@
 		478AC5441C1BDED2007D1270 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "iOS-Design-PatternsUITests/Info.plist";
+				INFOPLIST_FILE = BookLibraryUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.crazyfree.iOS-Design-PatternsUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crazyfree.BookLibrary;
 				PRODUCT_NAME = BookLibrary;
-				TEST_TARGET_NAME = "iOS-Design-Patterns";
+				TEST_TARGET_NAME = BookLibrary;
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -552,11 +556,11 @@
 		478AC5451C1BDED2007D1270 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "iOS-Design-PatternsUITests/Info.plist";
+				INFOPLIST_FILE = BookLibraryUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.crazyfree.iOS-Design-PatternsUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crazyfree.BookLibrary;
 				PRODUCT_NAME = BookLibrary;
-				TEST_TARGET_NAME = "iOS-Design-Patterns";
+				TEST_TARGET_NAME = BookLibrary;
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;
